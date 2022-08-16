@@ -9,13 +9,13 @@
   </head>
   <body>
     <header>
-      <h1 class="text-6xl text-center">
+      <h1 class="text-6xl text-center mt-12">
         Functional <span class="text-red-500 font-medium">Bap er Bank</span>!!!
       </h1>
     </header>
     <main>
       <!-- Show Details of Your Bank -->
-      <section class="mt-8">
+      <section class="mt-32">
         <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
           <div class="bg-cyan-400 p-8 rounded-lg">
             <h4 class="text-3xl">Deposit</h4>
@@ -45,6 +45,7 @@
               Deposit Amount Here
             </h2>
             <input
+              id="deposit_input"
               class="p-4 w-full rounded-lg mb-4 text-center"
               type="text"
               placeholder="Enter Your Deposit Amount Here (BDT)"
@@ -75,5 +76,6 @@
         </div>
       </section>
     </main>
+    <script src="js/deposit.js"></script>
   </body>
 </html>
