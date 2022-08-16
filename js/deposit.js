@@ -9,4 +9,9 @@ document.getElementById("deposit_btn").addEventListener("click", function () {
   const depositInputResult = parseFloat(depositInputAmountString);
   const newDepositTotal = depositInputResult + newDepositValue;
   depositInputAmount.innerText = newDepositTotal;
+  const totalBalance = document.getElementById("balance_total");
+  const totalBalanceValueString = totalBalance.innerText;
+  const totalBalanceValue = parseFloat(totalBalanceValueString);
+  const totalBalanceUpdate = totalBalanceValue + newDepositValue;
+  totalBalance.innerText = totalBalanceUpdate;
 });
