@@ -13,4 +13,8 @@ document.getElementById("withdraw_btn").addEventListener("click", function () {
   const totalBalanceValue = parseFloat(totalBalanceValueString);
   const totalBalanceAfterWithdraw = totalBalanceValue - withdrawInput;
   totalBalance.innerText = totalBalanceAfterWithdraw;
+  if (withdrawInput > totalBalance) {
+    alert("Sorry ! Baper Bank a Eto Taka Nai.");
+    return;
+  }
 });
